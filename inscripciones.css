@@ -1,3 +1,46 @@
+h1{
+    text-align: center;
+    margin: 2rem;
+}
+h2{
+    text-algin: center;
+    margin: 1rem 0;
+}
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0 ;
+}
+
+.container-year{
+    padding: 2em;
+    background-color: beige;
+    width: 86%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+.paso{
+    width: 70%;
+    padding: 2rem;
+    background-color: #c25939;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+}
+    
+.izquierda{
+    margin: 2rem auto 2rem 0;
+}
+
+.derecha{
+    margin: 2rem 0 2rem auto;
+}
+
+.container-mitad{
+    display: flex; 
+}
+
+/*
 .container-materia{
     display: flex;  
     justify-content: space-around;  
@@ -5,71 +48,28 @@
 .container-mitad{
     width: 50%;
 }
-/* Estilo general */
-.paso {
-    width: 70%;
-    padding: 2rem;
-    background-color: #084dc4;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    justify-content: center;
-}
 
-/* Títulos */
 .paso h3 {
     margin-top: 1rem;
     color: #0d6efd;
 }
 
-/* Párrafos */
+
 .paso p {
     margin-bottom: 1rem;
     color: #555;
 }
 
-/* Formulario dentro de .paso */
+
 .paso form {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: flex-start;
 }
-.container-display-flex{
-    display: flex;
-    justify-content: center;
-}
-/* Inputs alineados horizontalmente */
-.paso form input[type="text"] {
-    flex: 1 1 30%;
-    padding: 0.6rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    min-width: 180px;
-}
-
-/* Botón centrado debajo */
-.paso form button[type="submit"] {
-    width: 100%;
-    margin-top: 1rem;
-    padding: 0.6rem;
-    background-color: #0d6efd;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
 
 .paso form button[type="submit"]:hover {
     background-color: #084dc4;
-}
-
-.izquierda{
-    margin: 2rem auto 2rem 0;
-}
-
-.derecha{
-    margin: 2rem 0 2rem auto;
 }
 
 body {
@@ -87,7 +87,6 @@ h1 {
     margin-bottom: 2rem;
 }
 
-/* Contenedor general */
 .materia {
     margin-bottom: 3rem;
     width: 30%;
@@ -97,7 +96,6 @@ h1 {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo por sección */
 div > div:nth-of-type(1)::before {
     font-weight: bold;
     color: #0d6efd;
@@ -119,12 +117,10 @@ div > div:nth-of-type(3)::before {
     margin-bottom: 1rem;
 }
 
-/* Subdivisiones internas */
 h2, h3, h4, h5 {
     margin-top: 1rem;
 }
 
-/* Formularios uniformes */
 form {
     display: flex;
     flex-direction: column;
@@ -138,47 +134,4 @@ form input[type="text"] {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
-/* Agrupación horizontal de inputs */
-form input[type="text"]:nth-child(-n+3) {
-    display: inline-block;
-    margin: 0 0.5rem;
-}
-
-/* Botón de envío */
-form button[type="submit"] {
-    margin-top: 1rem;
-    padding: 0.6rem 2rem;
-    background-color: #0d6efd;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-form button[type="submit"]:hover {
-    background-color: #084dc4;
-}
-
-/* Botón adicional (ej: "Descargar documentos") */
-button:not([type="submit"]) {
-    margin-top: 1rem;
-    padding: 0.5rem 1.5rem;
-    background-color: #6c757d;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:not([type="submit"]):hover {
-    background-color: #5a6268;
-}
-
-/* Imágenes placeholder */
-img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    margin-top: 1rem;
-}
+*/
