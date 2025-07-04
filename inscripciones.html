@@ -13,7 +13,7 @@
             <h2 class="titule">Ingreso a Primer año</h2>
             
             <div class="paso izquierda">
-                <h3 class="centrar">Charlas informativas</h3>
+                <h3>Charlas informativas</h3>
                 <div class="container-mitad">
                     <div>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non nihil asperiores, quasi, doloribus aliquid explicabo, accusamus corporis recusandae voluptatibus adipisci numquam? Suscipit pariatur perferendis numquam aliquid qui et quia consequuntur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quasi sit laboriosam ipsa! Molestias quaerat consectetur eius doloribus libero itaque debitis iusto quasi, ad necessitatibus minima repellendus officia voluptate maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eos reiciendis laboriosam praesentium illo corrupti dolorum reprehenderit facilis ad atque sint nostrum nisi, officiis qui eum est dolor? Consequatur, accusamus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime alias quod sequi, deleniti unde explicabo tempora expedita repellat optio culpa blanditiis et magni velit nisi architecto? Sapiente mollitia quaerat reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, aperiam ad! Officia, esse exercitationem iure delectus qui, ex veniam, magnam quia eos voluptate id similique pariatur explicabo tempore at. Quibusdam.</p>
@@ -23,12 +23,15 @@
                     </div>
                 </div>
                 <h3>Próxima charla: Especialidades</h3>
-                <form action="">
+                <button id="toggleBtn" class="boton-copado">Inscribirse a próxima charla</button>
+                <div id="formulario" class="guardado">
+                    <form action="">
                     <input type="text" name="Nombre" placeholder="Nombre" required>
                     <input type="text" name="Apellido" placeholder="Apellido" required>
                     <input type="text" name="Email" placeholder="Email" required>
                     <button type="submit">Enviar</button>
                 </form>
+                </div>
             </div>
             
             <div class="paso derecha">
@@ -94,5 +97,17 @@
     <footer>
         
     </footer>
+
+    <script>
+        const btn = document.getElementById('toggleBtn');
+        const formContainer = document.getElementById('formulario');
+
+        btn.addEventListener('click', () => {
+        const isHidden = formContainer.classList.contains('hidden');
+        formContainer.classList.toggle('guardado');
+        const currentlyHidden = formContainer.classList.contains('guardado');
+        btn.textContent = currentlyHidden ? 'Inscribirse a próxima charla' : 'Cerrar formulario';
+        });
+    </script>
 </body>
 </html>

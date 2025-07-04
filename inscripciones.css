@@ -3,13 +3,22 @@ h1{
     margin: 2rem;
 }
 h2{
-    text-algin: center;
+    text-align: center;
     margin: 1rem 0;
 }
+
+h3 {
+    margin: 1rem 0;
+}
+
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0 ;
+}
+
+body {
+    background-color: rgb(35, 75, 160);
 }
 
 .container-year{
@@ -19,13 +28,19 @@ h2{
     margin: 0 auto;
     border-radius: 20px;
 }
+
 .paso{
     width: 70%;
     padding: 2rem;
-    background-color: #c25939;
+    background-color: rgb(51, 99, 204);
     border-radius: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     justify-content: center;
+}
+
+.paso p{
+    text-align: justify;
+    width: 90%;
 }
     
 .izquierda{
@@ -38,6 +53,16 @@ h2{
 
 .container-mitad{
     display: flex; 
+}
+
+.guardado {
+    display: none;
+}
+
+.boton-copado {
+    width: 100%;
+    height: 70px;
+    font-size: large;
 }
 
 /*
